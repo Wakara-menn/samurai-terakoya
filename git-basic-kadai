@@ -1,1 +1,32 @@
+wakaba@yamamotonoMacBook-Air ~ % mkdir git_challenge
+wakaba@yamamotonoMacBook-Air ~ % cd git_challenge
+wakaba@yamamotonoMacBook-Air git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /Users/wakaba/git_challenge/.git/
+wakaba@yamamotonoMacBook-Air git_challenge % git add hello_world.txt
+wakaba@yamamotonoMacBook-Air git_challenge % git commit -m "hello_world.txtを追加"
+[master (root-commit) f0766e3] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+wakaba@yamamotonoMacBook-Air git_challenge % git status
 
+On branch master
+nothing to commit, working tree clean
+wakaba@yamamotonoMacBook-Air git_challenge % git add hello_world.txt
+wakaba@yamamotonoMacBook-Air git_challenge % git commit -m "日本語訳を追記"
+[master f24d5b9] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+wakaba@yamamotonoMacBook-Air git_challenge % git log --oneline
+
+f24d5b9 (HEAD -> master) 日本語訳を追記
+f0766e3 hello_world.txtを追加
+wakaba@yamamotonoMacBook-Air git_challenge % 
